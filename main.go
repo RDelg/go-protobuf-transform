@@ -5,10 +5,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/golang/protobuf/jsonpb" // Import from your generated code directory
-	// Import from your generated code directory
-	// Import your generated code package
 	"example.com/protobuf-transformation/pkg"
+	"github.com/golang/protobuf/jsonpb"
 )
 
 func applyFuncToValue(obj map[string]interface{}, path []string, f func(interface{}) interface{}) {
