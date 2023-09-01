@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option go_package = "./pkg";
+
+message SomeMessage {
+
+    message First {
+        string second = 1;
+    }
+
+    message Array {
+        First first = 1;
+    }
+
+    message Object {
+        string foo = 1;
+        repeated Array array = 2;
+    }
+
+    Object object = 1;
+}
+
